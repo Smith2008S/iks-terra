@@ -12,6 +12,10 @@ variable ibm_region {
     default     = "us-south"
 }
 
+variable resource_group {
+    description = "Name of resource group to provision resources"
+    default = "landing-zone"
+}
 ##############################################################################
 
 
