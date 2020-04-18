@@ -6,9 +6,6 @@ variable ibmcloud_api_key {
     description = "IBM Cloud IAM API Key"
 }
 
-variable resource_group {
-    description = "Name of resource group to provision resources"
-}
 
 variable ibm_region {
     description = "IBM Cloud region where all resources will be deployed"
@@ -25,19 +22,19 @@ variable ibm_region {
 
 variable public_vlan_ids {
   description = "List of public vlans. The first will be for the master, any additional will be for worker pools"
-  type        = "list"
+  type        = "string"
 
 }
 
 variable private_vlan_ids {
   description = "List of private vlans The first will be for the master, any additional will be for worker pools"
-  type        = "list"
+  type        = "string"
 }
 
 
 variable zones {
   description = "List of cluster zones The first will be for the master, any additional will be for worker pools"
-  type        = "list"
+  type        = "string"
 
 }
 
